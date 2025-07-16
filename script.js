@@ -520,9 +520,9 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         gsap.to(loaderDiv, {
             // scale: 0,
-            height: 10,
-            width: 10,
-            zIndex: 0,
+            height: 0,
+            width: 0,
+            zIndex: "-1",
             opacity: 0,
             duration: 0.5,
             ease: "power2.in"
