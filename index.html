@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft-clone.com</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+">
+</head>
+
+<body>
+    <!-- <div id="loader" class="fixed inset-0 z-50 bg-black flex items-center justify-center flex-col" style="perspective: 800px;"> 
+        <div id="cube" class="h-[100px] w-[100px] relative animate-rotateCube [transform-style:preserve-3d]">
+            <div class="face front"> <p>OFFICE </p> <span> productivity, energy, and work</span>  </div>
+            <div class="face back"><p>WINDOWS</p> <span>trust, security, and stability</span> </div>
+            <div class="face right"><p>XBOX</p> <span>entertainment, fun, and creativity</span> </div>
+            <div class="face left"><p>WINDOWS </p> <span>trust, security, and stability</span> </div>
+            <div class="face top"><p>BING</p> <span>innovation</span> </div>
+            <div class="face bottom"><div id="btm-div"><p>BING</p> <span>optimism, curiosity, and innovation</span></div> </div>
+        </div>
+        <h1 class="text-white translate-x-[10%]" style="margin-top: 7vh; font-size: 3vmax"> LOADING ..... </h1>
+    </div> -->
+    <main class="overflow-x-hidden md:flex md:flex-col md:items-center">
+        <nav class="h-[8vh] w-screen flex items-center justify-between px-5 py-3 md:px-20">
+            <i class="ri-menu-2-line hover:cursor-pointer md:hidden" id="Menu-btn" data-isOpen="true"></i>
+            <i class="ri-search-line md:hidden"></i>
+            <img src="LOGO.PNG" alt="" class="h-5 w-auto">
+            <i class="ri-shopping-cart-line md:hidden"></i>
+            <i class="ri-account-circle-line md:hidden"></i>
+            <div id="nav-mid" class="hidden  md:flex items-center gap-5 text-sm text-gray-500">
+                <h4>Microsoft 365</h4>
+                <h4>Teams</h4>
+                <h4>Copilot</h4>
+                <h4>Windows</h4>
+                <h4>Surface</h4>
+                <h4>Xbox</h4>
+                <h4>Support</h4>
+            </div>
+            <div id="nav-end" class="hidden md:flex items-center gap-5 text-sm text-gray-500">
+                <h4 class="flex items-center"> All Mircosoft <i class="ri-arrow-down-s-line translate-y-0.5 ml-1"
+                        style="font-size: 1vw;"></i></h4>
+                <h4> Search <i class="ri-search-line ml-1" style="font-size: 1vw;"></i> </h4>
+                <h4> Cart <i class="ri-shopping-cart-line ml-1" style="font-size: 1vw;"></i></h4>
+                <h4> Sign in </h4>
+            </div>
+        </nav>
+        <div id="nav-mobile"
+            class="opacity-0 -translate-x-[100%] transform transition-all duration-300 ease-in-out absolute top-[8%] bg-slate-50 w-screen z-10">
+            <li>Microsoft 365</li>
+            <li>Teams</li>
+            <li>Copilot</li>
+            <li>Steam</li>
+            <li>Windows</li>
+            <li>Surface</li>
+            <li>Xbox</li>
+            <li>Support</li>
+            <li>Account</li>
+        </div>
+        <div id="page-1" class="min-h-screen w-screen mb-5 flex flex-col gap-5">
+            <div id="img-main-wrapper" class="flex flex-col items-center overflow-x-hidden">
+                <div id="slider-1-wrapper" class="flex w-screen">
+                    <div
+                        class="slide-grp-1 shrink-0 transform relative transition-all duration-500 ease-in-out md:relative">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP2-859x540"
+                            alt="" class="w-screen h-auto md:hidden">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP5-1920x600"
+                            alt="" class="hidden md:block w-screen h-auto">
+                        <div
+                            class="slide-1-bottom py-5 px-5 w-screen md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[4%] md:w-[35vw]">
+                            <h1 class="text-3xl font-medium md:text-5xl"> Meet Surface Laptop </h1>
+                            <p class="my-3 md:my-5 md:text-xl md:text-gray-500"> Unlock AI features like Live Captions
+                                and Cocreator with this exceptionally
+                                powerful laptop. </p>
+                            <button class="px-3 py-1.5 bg-blue-600 text-white font-medium"> Learn More </button>
+                        </div>
+                    </div>
+                    <div
+                        class="slide-grp-1 shrink-0 transform relative transition-all duration-500 ease-in-out md:relative">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP2-859x540"
+                            alt="" class="w-screen h-auto md:hidden">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP5-1920x600"
+                            alt="" class="hidden md:block w-screen h-auto">
+                        <div
+                            class="slide-1-bottom py-5 px-5 w-screen md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[4%] md:w-[35vw]">
+                            <h1 class="text-3xl font-medium md:text-5xl md:text-white"> Meet Surface Pro </h1>
+                            <p class="my-3 md:my-5 md:text-xl md:text-gray-200"> This laptop's unrivalled flexibility
+                                and AI features like Live Captions and
+                                Cocreator, enable you to do more than you ever imagined. </p>
+                            <button class="px-3 py-1.5 bg-blue-600 text-white font-medium"> Learn More </button>
+                        </div>
+                    </div>
+                    <div
+                        class="slide-grp-1 shrink-0 transform relative transition-all duration-500 ease-in-out md:relative">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP2-859x540"
+                            alt="" class="w-screen h-auto md:hidden">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP5-1920x600"
+                            alt="" class="hidden md:block w-screen h-auto">
+                        <div
+                            class="slide-1-bottom py-5 px-5 w-screen md:absolute md:top-[50%] md:-translate-y-[50%] md:left-[4%] md:w-[35vw]">
+                            <h1 class="text-3xl font-medium md:text-5xl"> Meet Surface Laptop </h1>
+                            <p class="my-3 md:my-5 md:text-xl md:text-gray-500"> Unlock AI features like Live Captions
+                                and Cocreator with this exceptionally
+                                powerful laptop. </p>
+                            <button class="px-3 py-1.5 bg-blue-600 text-white font-medium"> Learn More </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="btns"
+                    class="w-screen px-10 flex justify-between items-center text-2xl border-t-2 border-t-slate-200 md:w-10/12 md:mb-10">
+                    <i class="ri-arrow-left-double-line md:text-4xl" id="previous"></i>
+                    <div id="time-line" class="h-1 w-1/2 overflow-x-hidden relative">
+                        <div id="main-tl" class="w-full bg-slate-300 h-full"></div>
+                        <div id="cover-tl" class="w-full h-full bg-slate-600 absolute inset-0"></div>
+                    </div>
+                    <i class="ri-arrow-right-double-line md:text-4xl" id="next"></i>
+                </div>
+            </div>
+            <div id="logos" class="flex flex-wrap w-full px-10 gap-8 items-center justify-center md:gap-16">
+                <div class="logo flex flex-col items-center gap-2 shrink-0">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
+                        alt="" class="w-10 h-auto">
+                    <a href="#" class="text-blue-600 underline font-medium text-[16px]">Choose your microsoft 365</a>
+                </div>
+                <div class="logo flex flex-col items-center gap-2 shrink-0">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40"
+                        alt="" class="w-10 h-auto">
+                    <a href="#" class="text-blue-600 underline font-medium text-[16px]">Shop Xbox</a>
+                </div>
+                <div class="logo flex flex-col items-center gap-2 shrink-0">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
+                        alt="" class="w-10 h-auto">
+                    <a href="#" class="text-blue-600 underline font-medium text-[16px]">Get Windows 11</a>
+                </div>
+                <div class="logo flex flex-col items-center gap-2 shrink-0">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40"
+                        alt="" class="w-10 h-auto">
+                    <a href="#" class="text-blue-600 underline font-medium text-[16px]">Explore Surface Device</a>
+                </div>
+            </div>
+        </div>
+        <div id="page-2" class="min-h-screen w-screen px-5 py-5 flex flex-col gap-10 md:px-20 md:flex-row md:gap-5 md:min-h-fit">
+
+            <div id="L1" class="page-2-lower shadow-md pb-5 md:w-4/12 md:h-[70vh]">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-M365-Icons-Teams?wid=406&hei=230&fit=crop"
+                    alt="" class="object-contain w-full md:hidden">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-M365-Icons-Teams?wid=380&hei=213&fit=crop"
+                    alt="" class="hidden md:block">
+                <div id="lower-2" class="mt-5 px-5 md:h-1/2 flex flex-col items-start">
+                    <h2 class="text-xl font-medium md:text-[28px]">Achieve the extraordinary</h2>
+                    <p class="my-3 md:flex-1 md:hidden">With Microsoft 365, get spacious cloud storage, advanced
+                        security for your data and
+                        devices and powerful productivity and creativity apps with AI,1 all in one plan.</p>
+                    <p class="hidden my-3 md:flex-1 md:block">Microsoft 365 delivers cloud storage, security and
+                        Microsoft Copilot in your favourite apps – all in one plan.</p>
+                    <button class="px-3 py-1.5 bg-blue-600 text-white font-medium">Buy Now</button>
+                </div>
+            </div>
+
+            <div id="R1" class="page-2-lower shadow-md pb-5 md:w-4/12 md:h-[70vh]">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Copilot-Native-App-ROW?wid=406&hei=230&fit=crop"
+                    alt="" class="object-contain w-full md:hidden">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Copilot-Native-App-ROW?wid=380&hei=213&fit=crop"
+                    alt="" class="hidden md:block">
+                <div id="lower-2" class="mt-5 px-5 md:h-1/2 flex flex-col items-start">
+                    <h2 class="text-xl font-medium md:text-[28px]">Copilot is your AI companion</h2>
+                    <p class="my-3 md:flex-1">Always by your side, ready to support you whenever and wherever you need
+                        it.</p>
+                    <button class="px-3 py-1.5 bg-blue-600 text-white font-medium">Download the Copilot app</button>
+                </div>
+            </div>
+
+            <div id="L2" class="page-2-lower shadow-md pb-5 md:w-4/12 md:h-[70vh]">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=406&hei=230&fit=crop"
+                    alt="" class="object-contain w-full md:hidden">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=380&hei=213&fit=crop"
+                    alt="" class="hidden md:block">
+                <div id="lower-2" class="mt-5 px-5 md:h-1/2 flex flex-col items-start">
+                    <h2 class="text-xl font-medium md:text-[28px]">Xbox Series S</h2>
+                    <p class="my-3 md:flex-1">Next-Gen performance in the smallest Xbox ever</p>
+                    <button class="px-3 py-1.5 bg-blue-600 text-white font-medium">Shop Xbox Series S</button>
+                </div>
+            </div>
+
+            <div id="R2" class="page-2-lower shadow-md pb-5 md:w-4/12 md:h-[70vh]">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=406&hei=230&fit=crop"
+                    alt="" class="object-contain w-full md:hidden">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=380&hei=213&fit=crop"
+                    alt="" class="hidden md:block">
+                <div id="lower-2" class="mt-5 px-5 md:h-1/2 flex flex-col items-start">
+                    <h2 class="text-xl font-medium md:text-[28px]">Xbox Series X</h2>
+                    <p class="my-3 md:flex-1">With Microsoft 365, get spacious cloud storage, advanced security for your
+                        data and
+                        devices and powerful productivity and creativity apps with AI,1 all in one plan.</p>
+                    <button class="px-3 py-1.5 bg-blue-600 text-white font-medium">Shop Xbox Series X</button>
+                </div>
+            </div>
+        </div>
+        <div id="page-3" class="min-h-[60vh] w-screen px-5 mt-10 pb-5 md:px-20">
+            <div id="p3-wrapper" class="h-full w-full flex flex-col gap-3 md:flex-row-reverse md:gap-0 md:relative">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Game-Pass-APR-2025:VP2-859x540"
+                    alt="" class="h-1/2 w-full object-cover md:hidden">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Game-Pass-APR-2025:VP5-1596x600"
+                    alt="" class="hidden md:block md:h-full">
+                <div id="p3-btm"
+                    class="md:absolute md:left-[5%] md:top-[50%] md:-translate-y-[50%] md:text-white md:w-4/12">
+                    <h1 class="text-2xl font-medium md:text-4xl"> Xbox Game Pass Ultimate </h1>
+                    <p class="my-3 md:my-8 md:text-xl"> Play new titles on day one. Enjoy hundreds of high-quatity games
+                        with friends on
+                        console, PC or clouod.</p>
+                    <button class="px-3 py-1 bg-blue-600 text-white font-medium mr-4 md:text-2xl"> Join now </button>
+                    <span class="inline-block text-blue-500 font-medium text-xl md:text-2xl"> Watch the video </span>
+                </div>
+            </div>
+        </div>
+        <div id="page-4" class="w-screen px-5 md:px-20">
+            <h1 class="font-medium text-xl mb-3 md:text-4xl"> For Business </h1>
+            <div id="pg4-wrapper" class="flex flex-col md:flex-row md:gap-5">
+                <div id="L1-p4" class="pg-4-box h-full w-full mb-10 shadow-md pb-5 md:w-[25%] md:h-[85vh] md:py-10">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=406&hei=230&fit=crop"
+                        alt="" class="h-[35%] w-full object-cover mb-3 md:h-[45%] md:hidden">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=380&hei=213&fit=crop"
+                        alt="" class="hidden md:block md:h-[35%] md:w-full md:mb-3">
+                    <div id="pg9-lower" class="flex flex-col gap-2 px-5 md:h-[65%] md:gap-5">
+                        <span class="px-3 py-1 bg-yellow-500 font-medium w-fit"> New </span>
+                        <h2 class="text-2xl font-medium md:text-3xl"> Surface Pro for Business, <br> Copilot + PC |
+                            Intel </h2>
+                        <p class="flex-1"> Ultra-versatile and built with Intel® Core™ Ultra processors (Series 2) that
+                            power AI
+                            experiences to amplify your team’s productivity. </p>
+                        <button class="px-3 py-1 font-medium text-white w-fit bg-blue-600"> Learn More </button>
+                    </div>
+                </div>
+
+                <div id="R1-p4" class="pg-4-box h-full w-full mb-10 shadow-md pb-5 md:w-[25%] md:h-[85vh] md:py-10">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=406&hei=230&fit=crop"
+                        alt="" class="h-[35%] w-full object-cover mb-3 md:h-[45%] md:hidden">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=380&hei=213&fit=crop"
+                        alt="" class="hidden md:block md:h-[35%] md:w-full md:mb-3">
+                    <div id="pg9-lower" class="flex flex-col gap-2 px-5 md:h-[65%] md:gap-5">
+                        <span class="px-3 py-1 h-[4vh] font-medium w-fit hidden md:block"> </span>
+                        <h2 class="text-2xl font-medium md:text-3xl"> Microsoft 365 Copilot </h2>
+                        <p class="flex-1">Save time and focus on the things that matter most with AI in Microsoft 365
+                            for business. </p>
+                        <button class="px-3 py-1 font-medium text-white w-fit bg-blue-600"> Learn More </button>
+                    </div>
+                </div>
+
+                <div id="L2-p4" class="pg-4-box h-full w-full mb-10 shadow-md pb-5 md:w-[25%] md:h-[85vh] md:py-10">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=406&hei=230&fit=crop"
+                        alt="" class="h-[35%] w-full object-cover mb-3 md:h-[45%] md:hidden">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=380&hei=213&fit=crop"
+                        alt="" class="hidden md:block md:h-[35%] md:w-full md:mb-3">
+                    <div id="pg9-lower" class="flex flex-col gap-2 px-5 md:h-[65%] md:gap-5">
+                        <span class="px-3 py-1 h-[4vh] font-medium w-fit hidden md:block"> </span>
+                        <h2 class="text-2xl font-medium md:text-3xl"> 20% off windows 365 </h2>
+                        <p class="flex-1"> Experience seamless productivity with Windows 365 Cloud PC – delivering the
+                            full Windows
+                            experience on any device. </p>
+                        <button class="px-3 py-1 font-medium text-white w-fit bg-blue-600"> Learn More </button>
+                    </div>
+                </div>
+
+                <div id="R2-p4" class="pg-4-box h-full w-full mb-10 shadow-md pb-5 md:w-[25%] md:h-[85vh] md:py-10">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=406&hei=230&fit=crop"
+                        alt="" class="h-[35%] w-full object-cover mb-3 md:h-[45%] md:hidden">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=380&hei=213&fit=crop"
+                        alt="" class="hidden md:block md:h-[35%] md:w-full md:mb-3">
+                    <div id="pg9-lower" class="flex flex-col gap-2 px-5 md:h-[65%] md:gap-5">
+                        <span class="px-3 py-1 h-[4vh] font-medium w-fit hidden md:block"> </span>
+                        <h2 class="text-2xl font-medium md:text-3xl"> Join the era of AI </h2>
+                        <p class="flex-1"> Create, communicate, and code with the latest Microsoft AI solutions. </p>
+                        <button class="px-3 py-1 font-medium text-white w-fit bg-blue-600"> Learn More </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="links" class="h-[10vh] w-screen px-5 my-8 md:px-20">
+            <div id="link-1" class="flex gap-3 items-center md:gap-8 relative overflow-hidden">
+                <p class="text-[3vmax] font-medium md:text-[2vw]"> Follow <span class="text-blue-500">Microsoft</span>
+                </p>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-x-line"></i>
+                <div id="links-cover" class="absolute inset-0 bg-white"></div>
+            </div>
+        </div>
+        <footer
+            class="min-h-[100vh] w-screen px-5 py-10 flex flex-col gap-10 bg-slate-100 md:px-20 md:items-center md:min-h-[60vh]">
+            <div id="footer-wrapper" class="flex flex-col gap-10 md:flex-row md:gap-16">
+                <div id="sec-1" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> What's new </h1>
+                    <p> Surface Pro </p>
+                    <p> Surface Laptop </p>
+                    <p> Mircosoft Copilot </p>
+                    <p> Microsoft 365 </p>
+                    <p> Explore Microsoft products </p>
+                    <p> Windows 11 apps </p>
+                </div>
+                <div id="sec-2" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> Microsoft Store </h1>
+                    <p> Account profile </p>
+                    <p> Download Center </p>
+                    <p> Microsoft Store Support </p>
+                    <p> Returns </p>
+                    <p> Order tracking </p>
+                </div>
+                <div id="sec-3" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> Education </h1>
+                    <p> Microsoft in education </p>
+                    <p> Devices for education </p>
+                    <p> Microsoft Teams for Education </p>
+                    <p> Microsoft 365 Education </p>
+                    <p> Office Education </p>
+                    <p> Educator training and development </p>
+                    <p> Deals for students and parents </p>
+                    <p> Azure for students </p>
+                </div>
+                <div id="sec-4" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> Business </h1>
+                    <p>Microsoft Cloud</p>
+                    <p>Microsoft Security</p>
+                    <p>Azure</p>
+                    <p>Dynamics 365</p>
+                    <p>Microsoft 365</p>
+                    <p>Microsoft Advertising</p>
+                    <p>Microsoft 365 Copilot</p>
+                    <p>Microsoft Teams</p>
+                </div>
+                <div id="sec-5" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> Development and IT </h1>
+                    <p>Microsoft Developer</p>
+                    <p>Microsoft Learn</p>
+                    <p>Support for AI marketplace apps</p>
+                    <p>Microsoft Tech Community</p>
+                    <p>Azure Marketplace</p>
+                    <p>AppSource</p>
+                    <p>Microsoft Power Platform</p>
+                    <p>Visual Studio</p>
+                </div>
+                <div id="sec-6" class="sub-section flex flex-col gap-2">
+                    <h1 class="font-medium text-gray-700 md:text-[20px]"> Company</h1>
+                    <p>Careers</p>
+                    <p>About Microsoft</p>
+                    <p>Company news</p>
+                    <p>Privacy at Microsoft</p>
+                    <p>Investors</p>
+                    <p>Security</p>
+                    <p>Sustainability</p>
+                </div>
+            </div>
+            <div id="footer-end"
+                class="text-gray-500 flex flex-col gap-4 text-[1.8vmax] md:flex-row md:w-full md:mt-10">
+                <div id="end-1" class="flex w-full items-start flex-col gap-2 md:flex-row md:gap-5">
+                    <p><i class="ri-earth-line mr-2"></i>English (India) </p>
+                    <p>Your Privacy Choices</p>
+                    <p> Consumer Health Privacy </p>
+                </div>
+                <div id="end-2" class="flex flex-wrap w-full gap-3 md:flex-row">
+                    <p>Contact Microsoft</p>
+                    <p>Privacy</p>
+                    <p>Terms of use</p>
+                    <p>Trademarks</p>
+                    <p>About our ads</p>
+                    <p>© Microsoft 2025</p>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
