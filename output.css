@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --color-orange-600: oklch(64.6% 0.222 41.116);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-green-300: oklch(87.1% 0.15 154.449);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-slate-50: oklch(98.4% 0.003 247.858);
@@ -543,6 +542,14 @@
   .\[transform-style\:preserve-3d\] {
     transform-style: preserve-3d;
   }
+  .hover\:-translate-y-5 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -5);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
   .hover\:cursor-pointer {
     &:hover {
       @media (hover: hover) {
@@ -736,11 +743,6 @@
       gap: calc(var(--spacing) * 16);
     }
   }
-  .md\:bg-green-300 {
-    @media (width >= 48rem) {
-      background-color: var(--color-green-300);
-    }
-  }
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
@@ -831,6 +833,14 @@ nav i {
 .sub-section p {
   font-size: 1.8vmax;
   color: #747474;
+}
+#nav-mid h4:hover,#nav-end h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(15, 15, 15);
+}
+.page-2-lower:hover {
+  cursor: pointer;
 }
 @layer utilities {
   @keyframes rotateCube {
